@@ -1,0 +1,27 @@
+{
+  "name": "agents-md-zyt",
+  "version": "1.0.0",
+  "description": "AGENTS.md parser and validator - 实验性项目",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": ["agents.md", "ai", "parser", "validator"],
+  "author": "Jack Zhu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "yaml": "^2.3.0"
+  }
+}
