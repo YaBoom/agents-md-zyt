@@ -1,6 +1,8 @@
-# AGENTS.md Parser
+# agents-md-zyt
 
 > ⚠️ **实验性项目** - 这只是我学习AGENTS.md标准时的探索代码，不保证生产可用
+
+[![GitHub](https://img.shields.io/badge/GitHub-YaBoom%2Fagents--md--zyt-blue)](https://github.com/YaBoom/agents-md-zyt)
 
 一个简单的AGENTS.md解析器和验证工具，支持解析、验证和查找AGENTS.md文件。
 
@@ -17,17 +19,21 @@ AGENTS.md提供一个统一的格式，被Cursor、Windsurf、GitHub Copilot、Z
 ## 快速开始
 
 ```bash
+# 克隆项目
+git clone https://github.com/YaBoom/agents-md-zyt.git
+cd agents-md-zyt
+
 # 安装依赖
-pnpm install
+npm install
 
 # 编译
-pnpm build
+npm run build
 
 # 运行
-pnpm dev
+npm run dev
 
 # 测试
-pnpm test
+npm test
 ```
 
 ## 功能
@@ -40,7 +46,7 @@ pnpm test
 ## 使用示例
 
 ```typescript
-import { parseAgentsMd, findNearestAgentsMd, validateAgentsMd } from 'agents-md-parser';
+import { parseAgentsMd, findNearestAgentsMd, validateAgentsMd } from './src/index.js';
 
 // 解析文件
 const parsed = parseAgentsMd('./AGENTS.md');
@@ -89,6 +95,10 @@ node dist/index.js ./my-project
 2. findNearestAgentsMd还没实现真正的递归
 3. 错误处理比较粗糙
 4. 没有处理SKILL.md的YAML frontmatter
+
+## 相关文章
+
+- [AGENTS.md：我试图统一AI编码工具的配置，然后...](https://github.com/YaBoom/agents-md-zyt/blob/master/ARTICLE.md)
 
 ## 参考
 
